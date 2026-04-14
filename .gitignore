@@ -1,0 +1,30 @@
+# 依赖与构建产物（站点由源码构建，不提交）
+node_modules/
+dist/
+
+# 文档与本地工作记录（非站点运行所需）
+README.md
+worklogs/
+
+# 环境变量与密钥
+.env
+.env.*
+!.env.example
+
+# 编辑器与系统
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp
+*.swo
+
+# 日志与调试
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# 测试覆盖率
+coverage/
