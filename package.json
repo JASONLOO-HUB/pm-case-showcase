@@ -1,0 +1,26 @@
+{
+  "name": "pm-case-showcase",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite --host 0.0.0.0 --port 4173",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview --host 0.0.0.0 --port 4173",
+    "test": "tsx --test src/content.test.ts"
+  },
+  "dependencies": {
+    "@xyflow/react": "^12.8.5",
+    "react": "^19.0.0",
+    "react-dom": "^19.0.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.14.0",
+    "@types/react": "^19.0.0",
+    "@types/react-dom": "^19.0.0",
+    "@vitejs/plugin-react": "^5.0.4",
+    "tsx": "^4.21.0",
+    "typescript": "^5.8.2",
+    "vite": "^6.2.0"
+  }
+}
