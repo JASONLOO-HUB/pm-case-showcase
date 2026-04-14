@@ -3,7 +3,6 @@ import {
   defaultActiveNodeId,
   flowCards,
   gameplayPoints,
-  openSourceChoice,
   principles,
   quickFacts,
 } from './content';
@@ -86,22 +85,6 @@ export default function App() {
               </article>
             ))}
           </div>
-
-          <article className="open-source-card">
-            <div>
-              <p className="section-heading__eyebrow">开源方案</p>
-              <h3>{openSourceChoice.title}</h3>
-              <p>{openSourceChoice.summary}</p>
-            </div>
-            <div className="open-source-card__choices">
-              {openSourceChoice.choices.map((choice) => (
-                <section key={choice.name} className="open-source-card__choice">
-                  <h4>{choice.name}</h4>
-                  <p>{choice.recommendation}</p>
-                </section>
-              ))}
-            </div>
-          </article>
         </section>
       </main>
     </div>

@@ -38,15 +38,6 @@ export type HighlightCard = {
   body: string;
 };
 
-export type OpenSourceChoice = {
-  title: string;
-  summary: string;
-  choices: Array<{
-    name: string;
-    recommendation: string;
-  }>;
-};
-
 export const defaultActiveNodeId = 'investigation-planner';
 
 export const pageSections = ['玩法摘要', '核心流程', '设计原则'] as const;
@@ -103,22 +94,6 @@ export const principles: HighlightCard[] = [
     body: '最终需要生成的是可调查的互动结构，而不是一份更长、更复杂的报道。',
   },
 ];
-
-export const openSourceChoice: OpenSourceChoice = {
-  title: '为什么这页用 React Flow',
-  summary:
-    '这次的目标是让面试官快速理解一条既定流程，因此更适合用节点式、可缩放、可点击解释的画布方案。',
-  choices: [
-    {
-      name: 'React Flow',
-      recommendation: '适合产品流程说明，节点交互和右侧说明卡联动非常直接，也是这页的推荐方案。',
-    },
-    {
-      name: 'tldraw',
-      recommendation: '如果以后要扩展成自由编辑的创作白板，再切到 tldraw 会更合适。',
-    },
-  ],
-};
 
 export const flowNodes: FlowNodeMeta[] = [
   {
