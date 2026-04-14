@@ -1,5 +1,5 @@
 import type { Edge, Node } from '@xyflow/react';
-import { Background, Controls, MarkerType, ReactFlow } from '@xyflow/react';
+import { Background, Controls, MarkerType, Position, ReactFlow } from '@xyflow/react';
 import type { FlowCard } from './content';
 import { flowEdges, flowNodes } from './content';
 
@@ -13,6 +13,8 @@ function buildNodes(activeNodeId: string): Node[] {
   return flowNodes.map((item) => ({
     id: item.id,
     position: item.position,
+    sourcePosition: Position.Right,
+    targetPosition: Position.Left,
     data: {
       label: (
         <div className="flow-node__body">

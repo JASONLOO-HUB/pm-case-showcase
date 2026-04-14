@@ -227,8 +227,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它和模板约束一起进入 InvestigationPlanner，决定这次案件究竟围绕什么事实展开。',
       },
       {
-        heading: '体现的产品判断',
-        body: '我们把新闻视为“可被交互化的事实源”，而不是让模型把原文换一种措辞重写一遍。',
+        heading: '为什么需要这个节点',
+        body: '只有先拿到可信事实源，后续每一层规划和生成才有可追溯的依据，不会变成凭空杜撰。',
       },
     ],
   },
@@ -250,8 +250,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它不直接生成内容，而是和原始报道一起给 InvestigationPlanner 提供规划所需的结构条件。',
       },
       {
-        heading: '体现的产品判断',
-        body: '可玩性不是靠后期修修补补加出来的，而是从最开始就要写进生成边界里。',
+        heading: '为什么需要这个节点',
+        body: '它把“玩法边界”提前锁定，确保后续输出服务调查体验，而不是回到普通叙事写作。',
       },
     ],
   },
@@ -273,8 +273,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它承接原始报道与模板约束，并把统一的调查结构交给后面的关键材料、噪声和外围人物分支。',
       },
       {
-        heading: '体现的产品判断',
-        body: '先定义玩家怎样接近真相，再生成长什么样的内容，这是文章转玩法的核心转译点。',
+        heading: '为什么需要这个节点',
+        body: '它把“玩家如何接近真相”先定下来，后续内容才能围绕同一条调查路径展开。',
       },
     ],
   },
@@ -296,8 +296,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它接住 InvestigationPlanner 的结构结果，再把不同内容分发给 KeyWriter、NoiseReasoner 和 Peripheral Planner。',
       },
       {
-        heading: '体现的产品判断',
-        body: '我们需要先想清楚“哪类信息承担什么角色”，再让模型开始写，避免内容先行把结构带偏。',
+        heading: '为什么需要这个节点',
+        body: '它先分配信息角色与优先级，避免生成顺序反过来主导结构，导致节奏失控。',
       },
     ],
   },
@@ -319,8 +319,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它基于已经确认的关键节点与材料规划生成主线内容，并把结果送入最终的可玩案件结构。',
       },
       {
-        heading: '体现的产品判断',
-        body: '关键内容优先保证调查节奏，而不是一次性把所有精彩信息都堆给玩家。',
+        heading: '为什么需要这个节点',
+        body: '它保证关键证据按推进节奏出现，让玩家持续有方向地接近结论。',
       },
     ],
   },
@@ -331,7 +331,7 @@ export const flowCards: Record<string, FlowCard> = {
     sections: [
       {
         heading: '这个节点做什么',
-        body: '它先定义哪些背景信息、误导信息或时代语境值得被纳入案件，以及它们应该挂载在哪个阶段。',
+        body: '它先定义哪些背景信息、误导信息或时代语境值得被纳入案件，以及它们应该挂载在哪个阶段。这里的噪声是指不直接推进主线、但会影响判断难度与真实感的外围信息。',
       },
       {
         heading: '为什么不能省略',
@@ -342,8 +342,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它接住材料规划的结果，先明确噪声的作用，再把已定义好的方向交给 NoiseWriter 落成具体材料。',
       },
       {
-        heading: '体现的产品判断',
-        body: '噪声不是随机干扰，而是产品化控制下的语境层，目标是丰富体验而不是制造混乱。',
+        heading: '为什么需要这个节点',
+        body: '它确保噪声先被定义再被生成，让语境层可控地增加真实感，而不是制造信息污染。',
       },
     ],
   },
@@ -354,7 +354,7 @@ export const flowCards: Record<string, FlowCard> = {
     sections: [
       {
         heading: '这个节点做什么',
-        body: '把被定义好的噪声信息转成具体的新闻片段、旁支文件或环境材料。',
+        body: '把被定义好的噪声信息转成具体的新闻片段、旁支文件或环境材料。这里的噪声是指不直接推进主线、但能补充语境和干扰判断节奏的外围信息。',
       },
       {
         heading: '为什么不能省略',
@@ -365,8 +365,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它承接 NoiseReasoner 给出的方向，把语境层内容落成玩家可读的材料，再汇入整体体验。',
       },
       {
-        heading: '体现的产品判断',
-        body: '真实感不是靠塞满文本达成的，而是让每一类补充信息都知道自己为什么存在。',
+        heading: '为什么需要这个节点',
+        body: '它负责把噪声语境真正落笔成可读材料，让世界感被感知，而不挤占主线。',
       },
     ],
   },
@@ -388,8 +388,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它基于前面的规划结果补充人物侧面，并把这些信息作为支撑世界感的层次汇入最终案件。',
       },
       {
-        heading: '体现的产品判断',
-        body: '好的调查体验不只是“知道发生了什么”，还要理解事件怎样落在人身上、怎样被周围世界看见。',
+        heading: '为什么需要这个节点',
+        body: '它补足人物侧面的生活纹理，让玩家不只看到事实，还能理解事件对人的影响。',
       },
     ],
   },
@@ -411,8 +411,8 @@ export const flowCards: Record<string, FlowCard> = {
         body: '它收束所有规划和分层生成成果，把它们重新组织为玩家的调查节奏和认知路径。',
       },
       {
-        heading: '体现的产品判断',
-        body: '我们的目标不是自动写故事，而是把新闻事实组织成一个能被探索、被判断、被逐步理解的体验。',
+        heading: '为什么需要这个节点',
+        body: '它把分散结果整合成可操作的案件结构，确保最终交付的是体验而不是零散文本。',
       },
     ],
   },
